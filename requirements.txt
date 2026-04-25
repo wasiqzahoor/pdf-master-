@@ -1,3 +1,4 @@
-flask 
-pikepdf 
+flask
+pikepdf
 Pillow
+gunicorn
