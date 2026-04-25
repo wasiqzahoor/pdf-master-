@@ -3,392 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Primary Meta Tags -->
-      <link rel="icon" type="image/png" href="logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
-    <title>PDF Master — Free Merge & Compress PDF Online |Product of NewTechSofts</title>
-    <meta name="title" content="PDF Master — Free Merge & Compress PDF Online | NewTechSofts">
-    <meta name="description" content="Merge and Compress PDF files instantly with PDF Master. A 100% private, browser-based toolkit by NewTechSofts. No file limits, no uploads, purely secure.">
-    <meta name="keywords" content="PDF Merge, PDF Compress, PDF Toolkit, Online PDF Editor, Free PDF Tools, NewTexSofts, PDF Master, Secure PDF, Browser Based PDF">
+    
+    <!-- Professional SEO & Branding Section -->
+    <title>PDF Master — Free Merge & Compress PDF Online | NewTechSofts</title>
+    <meta name="description" content="Merge and Compress PDF files instantly with PDF Master. A 100% private, secure, and browser-based toolkit by NewTechSofts. No file limits, no signup required.">
+    <meta name="keywords" content="PDF Merge, PDF Compress, PDF Toolkit, Online PDF Editor, Free PDF Tools, NewTechSofts, PDF Master, Secure PDF, Browser Based PDF">
     <meta name="author" content="NewTechSofts">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pdfmaster.newtechsofts.com/">
+    <!-- Favicon (Make sure logo.png is in your GitHub repo) -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Open Graph (Social Sharing) -->
     <meta property="og:title" content="PDF Master — Free Merge & Compress PDF Online">
     <meta property="og:description" content="Securely merge and compress PDF files in your browser. Your data never leaves your device. Powered by NewTechSofts.">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pdfmaster.newtechsofts.com">
+    <meta property="og:image" content="https://pdfmaster.newtechsofts.com/logo.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pdfmaster.newtechsofts.com/">
-    <meta property="twitter:title" content="PDF Master — Free Merge & Compress PDF Online">
-    <meta property="twitter:description" content="Securely merge and compress PDF files in your browser. Your data never leaves your device. Powered by NewTechSofts.">
-    <meta property="twitter:image" content="logo.png">
-
-    
-
-    <!-- Canonical Link -->
-    <link rel="canonical" href="https://pdfmaster.newtechsofts.com/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@500;600;700&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-     <script type="application/ld+json">
+    <!-- Schema.org for Google Search -->
+    <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "PDF Master",
-      "url": "https://pdfmaster.newtechsofts.com",
-      "description": "A browser-based toolkit to merge and compress PDF files securely.Introduce by New Tech Softs to easily merge files or compressed in small sizes.",
-      "applicationCategory": "Utility",
-      "operatingSystem": "Any",
-      "author": {
-        "@type": "Organization",
-        "name": "NewTechSofts",
-        "url": "https://newtechsofts.com"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+     "@context": "https://schema.org",
+     "@type": "WebApplication",
+     "name": "PDF Master",
+     "url": "https://pdfmaster.newtechsofts.com",
+     "description": "Professional Browser-Based PDF Toolkit by NewTechSofts",
+     "applicationCategory": "BusinessApplication",
+     "operatingSystem": "All",
+     "creator": {
+       "@type": "Organization",
+       "name": "NewTechSofts",
+       "url": "https://www.newtechsofts.com"
+     }
     }
     </script>
+
+    <style>
+        /* Modern styling to avoid double scrollbars and white flashes */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background: #080C14; /* Match your website's dark theme */
+        }
+        iframe { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            background: transparent;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Cursor -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursor-follower"></div>
-
-    <!-- Background orbs -->
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="logo">
-            <div class="logo-icon"><i class="fas fa-file-pdf"></i></div>
-            PDF<span>Master</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#hero" class="nav-link">Home</a></li>
-            <li><a href="#merge-section" class="nav-link">Merge</a></li>
-            <li><a href="#compress-section" class="nav-link">Compress</a></li>
-            <li><a href="#features-section" class="nav-link">Features</a></li>
-        </ul>
-        <a href="https://newtexsofts.com" target="_blank" class="btn-nav">
-            <span>Get New Tools</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="#hero" onclick="closeMobileMenu()">Home</a>
-        <a href="#merge-section" onclick="closeMobileMenu()">Merge</a>
-        <a href="#compress-section" onclick="closeMobileMenu()">Compress</a>
-        <a href="#features-section" onclick="closeMobileMenu()">Features</a>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <div class="badge-dot"></div>
-                <span>100% Browser-Based · Zero Uploads · Fully Private</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Transform Your</span>
-                <span class="title-line accent-text">PDF Workflow</span>
-            </h1>
-            <p class="hero-sub">Merge, compress, and manage PDF files instantly — no server, no signup, no limits.</p>
-            <div class="hero-btns">
-                <a href="#merge-section" class="btn-primary">
-                    <i class="fas fa-link"></i>
-                    Merge PDFs
-                </a>
-                <a href="#compress-section" class="btn-ghost">
-                    <i class="fas fa-compress-arrows-alt"></i>
-                    Compress PDF
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat"><strong>∞</strong><span>Files</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><strong>0s</strong><span>Upload time</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><strong>Free</strong><span>Forever</span></div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="pdf-3d-stack">
-                <div class="pdf-card pdf-card-1">
-                    <i class="fas fa-file-pdf"></i>
-                    <span>document_01.pdf</span>
-                    <div class="pdf-bar"></div>
-                    <div class="pdf-bar short"></div>
-                </div>
-                <div class="pdf-card pdf-card-2">
-                    <i class="fas fa-file-pdf"></i>
-                    <span>report_2026.pdf</span>
-                    <div class="pdf-bar"></div>
-                    <div class="pdf-bar short"></div>
-                </div>
-                <div class="pdf-card pdf-card-3">
-                    <i class="fas fa-file-pdf"></i>
-                    <span>merged_final.pdf</span>
-                    <div class="pdf-bar"></div>
-                    <div class="pdf-bar short"></div>
-                </div>
-                <div class="merge-arrow">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-dot"></div>
-            <span>Scroll to explore</span>
-        </div>
-    </section>
-
-    <!-- Merge Section -->
-    <section id="merge-section" class="tool-section">
-        <div class="section-header">
-            <div class="section-tag"><i class="fas fa-link"></i> PDF Merge</div>
-            <h2>Merge Multiple PDFs <br><span class="accent-text">Into One Document</span></h2>
-            <p>Combine any number of PDF files in seconds. Drag to reorder, then merge.</p>
-        </div>
-        <div class="tool-card">
-            <div class="drop-zone" id="merge-drop-zone">
-                <input type="file" id="merge-input" multiple accept=".pdf">
-                <div class="drop-icon-wrap">
-                    <div class="drop-icon-ring"></div>
-                    <i class="fas fa-cloud-upload-alt"></i>
-                </div>
-                <p class="drop-title">Drop your PDF files here</p>
-                <p class="drop-sub">or <strong>click to browse</strong> — supports multiple files</p>
-                <div class="drop-formats">
-                    <span>.PDF</span>
-                </div>
-            </div>
-
-            <div id="merge-file-list" class="file-list"></div>
-
-            <div class="merge-action-area" id="merge-action-area" style="display:none;">
-                <div class="file-count-badge">
-                    <i class="fas fa-layer-group"></i>
-                    <span id="file-count-text">0 files ready to merge</span>
-                </div>
-                <button id="merge-btn" class="btn-action" disabled>
-                    <i class="fas fa-link"></i>
-                    <span>Merge All PDFs</span>
-                    <div class="btn-shine"></div>
-                </button>
-                <button id="merge-clear-btn" class="btn-clear">
-                    <i class="fas fa-trash"></i> Clear All
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Compress Section -->
-    <section id="compress-section" class="tool-section alt-bg">
-        <div class="section-header">
-            <div class="section-tag"><i class="fas fa-compress-arrows-alt"></i> PDF Compress</div>
-            <h2>Shrink PDF Size <br><span class="accent-text">Without Quality Loss</span></h2>
-            <p>Reduce file size by up to 90% using advanced browser-based compression techniques.</p>
-        </div>
-        <div class="tool-card">
-            <div class="drop-zone" id="compress-drop-zone">
-                <input type="file" id="compress-input" accept=".pdf">
-                <div class="drop-icon-wrap">
-                    <div class="drop-icon-ring"></div>
-                    <i class="fas fa-file-pdf"></i>
-                </div>
-                <p class="drop-title">Drop a single PDF to compress</p>
-                <p class="drop-sub">or <strong>click to select</strong> your file</p>
-                <div class="drop-formats">
-                    <span>.PDF</span>
-                </div>
-            </div>
-
-            <div id="compress-file-info" class="compress-file-info" style="display:none;">
-                <div class="compress-file-card">
-                    <div class="compress-file-icon"><i class="fas fa-file-pdf"></i></div>
-                    <div class="compress-file-details">
-                        <div class="compress-file-name" id="compress-file-name">filename.pdf</div>
-                        <div class="compress-file-size" id="compress-file-size">0 KB</div>
-                    </div>
-                    <button id="compress-remove-btn" class="icon-btn">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="compression-controls" id="comp-controls" style="display:none;">
-                <label class="control-label">Compression Level</label>
-                <div class="level-selector">
-                    <button class="level-btn" data-level="low" onclick="setLevel('low')">
-                        <i class="fas fa-tachometer-alt"></i>
-                        <strong>Low</strong>
-                        <span>Faster, larger file</span>
-                    </button>
-                    <button class="level-btn active" data-level="medium" onclick="setLevel('medium')">
-                        <i class="fas fa-sliders-h"></i>
-                        <strong>Medium</strong>
-                        <span>Balanced quality</span>
-                    </button>
-                    <button class="level-btn" data-level="high" onclick="setLevel('high')">
-                        <i class="fas fa-rocket"></i>
-                        <strong>High</strong>
-                        <span>Maximum shrink</span>
-                    </button>
-                </div>
-
-                <div class="compression-info">
-                    <div class="comp-info-item">
-                        <i class="fas fa-info-circle"></i>
-                        <span id="comp-info-text">Balanced compression — removes redundant data, optimizes streams, and strips metadata.</span>
-                    </div>
-                </div>
-            </div>
-
-            <button id="compress-btn" class="btn-action" disabled>
-                <i class="fas fa-compress-arrows-alt"></i>
-                <span>Compress PDF</span>
-                <div class="btn-shine"></div>
-            </button>
-        </div>
-    </section>
-
-    <!-- Progress Modal -->
-    <div class="progress-modal" id="progress-modal">
-        <div class="progress-modal-inner">
-            <div class="progress-spinner">
-                <svg viewBox="0 0 100 100" class="spinner-svg">
-                    <circle cx="50" cy="50" r="40" class="spinner-track"/>
-                    <circle cx="50" cy="50" r="40" class="spinner-fill" id="spinner-fill"/>
-                </svg>
-                <div class="progress-percent" id="progress-percent">0%</div>
-            </div>
-            <div class="progress-title" id="progress-title">Processing...</div>
-            <div class="progress-sub" id="progress-sub">Please wait while we work our magic</div>
-        </div>
-    </div>
-
-    <!-- Features Section -->
-    <section id="features-section" class="features-section">
-        <div class="section-header">
-            <div class="section-tag"><i class="fas fa-star"></i> Features</div>
-            <h2>Why Choose <span class="accent-text">PDF Master?</span></h2>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card feature-large">
-                <div class="feature-icon-wrap">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>100% Private</h3>
-                <p>Your files never leave your browser. All processing happens locally on your device — zero server uploads, zero data exposure.</p>
-                <div class="feature-glow"></div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-wrap">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3>Blazing Fast</h3>
-                <p>Powered by PDF-Lib and native browser APIs for lightning-fast processing.</p>
-                <div class="feature-glow"></div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-wrap">
-                    <i class="fas fa-infinity"></i>
-                </div>
-                <h3>No Limits</h3>
-                <p>No file count limit, no size cap, no subscription required. Always free.</p>
-                <div class="feature-glow"></div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-wrap">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Works Everywhere</h3>
-                <p>Fully responsive design works on desktop, tablet, and mobile devices.</p>
-                <div class="feature-glow"></div>
-            </div>
-            <div class="feature-card feature-wide">
-                <div class="feature-icon-wrap">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Advanced Compression Engine</h3>
-                <p>Multi-stage compression pipeline: removes duplicate objects, optimizes content streams, strips unnecessary metadata, and flattens form fields — achieving real, meaningful size reduction.</p>
-                <div class="feature-glow"></div>
-            </div>
-        </div>
-    </section>
-
-   <!-- Footer -->
-<footer class="main-footer">
-    <div class="footer-inner">
-        <!-- Left: Company Bio -->
-        <div class="footer-left">
-            <div class="footer-logo">PDF<span>Master</span></div>
-            <p class="company-bio">
-                NewTechSofts is a leading software innovation house dedicated to building high-performance digital solutions. 
-                <strong>PDF Master</strong> is our latest flagship product, designed to provide elite-level document management 
-                entirely within your browser. Stay tuned as we continue to launch more cutting-edge tools to simplify your digital workflow.
-            </p>
-            <div class="social-links">
-                <a href="https://linkedin.com/company/newtechsofts" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/newtechsoft" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://facebook.com/newtechsofts" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.newtechsofts.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-
-        <!-- Right: Links Grid -->
-        <div class="footer-right-grid">
-            <div class="footer-links">
-                <h4>Quick Tools</h4>
-                <a href="#merge-section"><i class="fas fa-chevron-right"></i> Merge PDF</a>
-                <a href="#compress-section"><i class="fas fa-chevron-right"></i> Compress PDF</a>
-                <a href="#hero"><i class="fas fa-chevron-right"></i> Home</a>
-            </div>
-            <div class="footer-links">
-                <h4>Our Company</h4>
-                <a href="https://newtechsofts.com" target="_blank"><i class="fas fa-chevron-right"></i> NewTechSofts</a>
-                <a href="https://newtechsofts.com/about"><i class="fas fa-chevron-right"></i> About Us</a>
-                </div>
-        </div>
-    </div>
-
-    <!-- Middle: NewTechSofts Logo Branding -->
-    <div class="footer-branding">
-        <div class="branding-label">A Product Of</div>
-        <a href="https://newtechsofts.com" target="_blank">
-            <img src="https://www.newtechsofts.com/assets/logo-DbTpYI1g.png" alt="NewTechSofts Logo" class="nts-footer-logo">
-        </a>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 PDF Master. All Rights Reserved.</p>
-        <p>Engineered with ❤️ by <a href="https://newtechsofts.com" target="_blank">NewTechSofts Team</a></p>
-    </div>
-</footer>
-
-    <!-- Toast -->
-    <div class="toast" id="toast">
-        <i class="fas fa-check-circle" id="toast-icon"></i>
-        <span id="toast-msg">Done!</span>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Replace 'TUMHARA-USERNAME' with your actual Hugging Face username -->
+    <iframe 
+        src="https://wasiq-zahoor-pdf-master.hf.space" 
+        allow="accelerometer; ambient-light-sensor; input-device-capabilities; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" 
+        sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads"
+        title="PDF Master Toolkit">
+    </iframe>
 </body>
 </html>
